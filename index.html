@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stupid simple HTML form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <main>
+        <h1>Stupid simple HTML form</h1>
+        <p>Just a lucky form</p>
+        <div class="col">
+            <div class="row">
+                <form action="http://localhost:777/submit"
+                      method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text"
+                               name="name"
+                               id="name"
+                               class="form-control"
+                               placeholder="Your name here">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email"
+                               name="email"
+                               id="email"
+                               class="form-control"
+                               placeholder="you@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password"
+                               name="password"
+                               id="password"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox"
+                                   class="custom-control-input"
+                                   id="customCheck1">
+                            <label class="custom-control-label"
+                                   for="customCheck1">
+                                I accept the terms & conditions
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
